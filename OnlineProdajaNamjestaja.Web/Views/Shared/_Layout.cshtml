@@ -1,0 +1,97 @@
+﻿@using Microsoft.AspNetCore.Http
+@using OnlineProdajaNamjestaja.Data.Helper
+@using OnlineProdajaNamjestaja.Data.Models
+
+
+@{
+    Korisnik username = Context.GetLogiraniKorisnik();
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineProdajaNamjestaja.Web</title>
+
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    @*<link rel="stylesheet" href="~/lib/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/css/bootstrap.min.css" />*@
+
+
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    @*<script src="~/lib/js/jquery-3.4.1.js"></script>
+        <script src="~/lib/js/bootstrap.bundle.js"></script>
+
+        <script src="~/lib/js/jquery-3.4.1.min.js"></script>
+        <script src="~/lib/js/bootstrap.bundle.min.js"></script>*@
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+
+    <script src="/js/site.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Glavni modul</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="ModulAdministrator" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="ModulMenadzer" asp-controller="ProizvodiMenadzer" asp-action="Index">Menadzer</a></li>
+                    <li><a asp-area="ModulKupac" asp-controller="Proizvodi" asp-action="Index">Kupac</a></li>
+
+
+                    <li>
+                        <a asp-area="" asp-controller="Autentifikacija" asp-action="Logout">
+
+                            @if (username != null)
+                            {
+                                <label>
+                                    @username.KorisnickoIme
+                                    Logout
+                                </label>
+
+                            }
+                            else
+                            {
+                                <label>
+                                    Login
+                                </label>
+                            }
+                        </a>
+                    </li>
+                    <li><a asp-area="" asp-controller="Sesija" asp-action="Index">Aktivne sesije</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2019 - OnlineProdajaNamjestaja.Web</p>
+        </footer>
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@{
+    //Layout = null;
+    List<Kupac> kupci = (List<Kupac>)ViewData["kupci"];
+}
+<br />
+<br />
+<h4>Spisak kupaca</h4>
+
+<div>
+    @*@foreach (var x in kupci)
+    {
+        @x.Ime <br />
+    }*@
+</div>
+
+<a href="/Proizvodi/Index">Proizvodi</a><br />
+<a href="/NarudzbaStavke/Index">Korpa</a><br />
+<a href="/Narudzbe/Index">Historija narudzbi</a><br />
+<a href="/AkcijskiKatalog/Index">Akcijski katalog </a><br />
+<a href="/Proizvodi/Dodaj">Dodaj novi proizvod </a><br />
+<a href="/Proizvodi/IndexAdmin">Prikazi proizvode </a><br />

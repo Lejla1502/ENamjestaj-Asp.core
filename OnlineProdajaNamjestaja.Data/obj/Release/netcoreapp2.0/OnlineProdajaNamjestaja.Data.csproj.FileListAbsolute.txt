@@ -1,0 +1,9 @@
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.deps.json
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.dll
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.pdb
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.csprojResolveAssemblyReference.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.csproj.CoreCompileInputs.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.AssemblyInfoInputs.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.AssemblyInfo.cs
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.dll
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Data\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.pdb

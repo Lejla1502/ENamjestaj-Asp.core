@@ -1,0 +1,157 @@
+﻿@model OnlineProdajaNamjestaja.Web.Areas.ModulMenadzer.ViewModels.ProizvodiDodajVM
+
+@{
+    //Layout = null;
+    ViewData["Title"] = "Proizvodi";
+}
+
+<br />
+<br />
+<html>
+<head>
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>*@
+    @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />*@
+   
+
+</head>
+<body>
+
+    <h2>Dodaj proizvod</h2>
+     <form id="dodajNoviProizvod" asp-action="UploadProduct" asp-controller="ProizvodiMenadzer" asp-area="ModulMenadzer" method="post" enctype="multipart/form-data">
+         <input type="hidden" value="@Model.ProizvodId" name="ProizvodId" id="prID" />
+         <input type="hidden" value="@Model.Slika" name="Slika" id="mdlSlika1" />
+         <div class="form-group">
+             <label>Naziv: </label>
+             <div>
+                 <input asp-for="Naziv" class="form-control" />
+                 <span asp-validation-for="Naziv" class="text-danger"></span>
+             </div>
+         </div>
+
+         <div class="form-group">
+             <label>Sifra: </label>
+             <div>
+                 @if (Model.ProizvodId == 0)
+            {<input asp-for="Sifra" class="form-control" />
+             <span asp-validation-for="Sifra" class="text-danger"></span>}
+    else
+    {
+     <input asp-for="Sifra" class="form-control" readonly />
+
+
+}
+
+             </div>
+         </div>
+
+         <div class="form-group">
+             <label>Cijena: </label>
+             <div>
+                 <input asp-for="Cijena" class="form-control" />
+                 <span asp-validation-for="Cijena" class="text-danger"></span>
+             </div>
+         </div>
+
+         <div class="form-group">
+             <label>Vrsta: </label>
+
+             <div>
+                 <select asp-for="VrstaID" asp-items="@{new SelectList(Model.Vrste,"Id","Naziv")}">
+                     <option value=""></option>
+                 </select>
+                 @*@Html.DropDownList("ProizvodID", Model.Proizvodi, new {@class = "form-control"})*@
+                 @*@Html.DropDownListFor(x => x.VrstaID, Model.Vrste, "Odaberite vrstu", new { @class = "form-control" })*@
+                 @*@MyMvc.dropdown("razrednikID", Model.nastavnici, 0, "form-control")*@
+                 @*<span asp-validation-for="ProizvodID" class="text-danger"></span>
+                    <select asp-for="ProizvodID" asp-items="@Model.Proizvodi" class="form-control">
+                    <option>(Odaberite proizvod)</option>
+                </select>*@
+
+                 @*@Html.ValidationMessage("Potrebno je odabrati proizvod")*@
+                 <span asp-validation-for="VrstaID" class="text-danger"></span>
+             </div>
+         </div>
+
+         <div class="form-group">
+             <label>Boja: </label>
+
+             <div>
+                 @*@Html.DropDownList("ProizvodID", Model.Proizvodi, new {@class = "form-control"})*@
+                 @*@Html.DropDownListFor(x => x.BojaID, Model.Boje, "Odaberite boju", new { @class = "form-control chosen-select" })*@
+                 @*@MyMvc.dropdown("razrednikID", Model.nastavnici, 0, "form-control")*@
+                 @*<span asp-validation-for="ProizvodID" class="text-danger"></span>*@
+                 @*<select class="form-control chosen-select" asp-for="BojaID" asp-items="@Model.Boje" multiple>*@
+                 @*<select class="form-control chosen-select" asp-for="BojaID" asp-items="@{new SelectList(Model.Boje,"Id","Naziv")}" multiple>
+                    <option value="" disabled>Odaberite boju</option>
+                </select>*@
+                 @Html.ListBoxFor(m => m.BojeID, Model.Boje, new { @class = "form-control e1", @multiple = "multiple" })
+
+                 @*@Html.ValidationMessage("Potrebno je odabrati proizvod")*@
+                 <span class="text-danger">@Html.ValidationMessageFor(m => m.BojeID)</span>
+             </div>
+         </div>
+
+          <div class="form-group">
+             <label asp-for="UploadPic"></label>
+
+             <input type=file asp-for="UploadPic" class="form-control "  />
+             <span asp-validation-for="UploadPic" class="text-danger"></span>
+         </div>
+
+         <br />
+
+         @if (Model.ProizvodId != 0)
+    {
+     <div class="form-group">
+         <img src="@Model.Slika" class="img-thumbnail" asp-append-version="true" style="width:250px;height:250px;margin-right:auto;display:block;" />
+     </div>}
+
+         <br />
+         <br />
+
+         @*<button class="btn btn-primary">Dodaj</button>*@
+
+         <input id="submitButton" type="submit" value="Snimi" class="btn btn-primary" />
+
+
+
+
+
+     </form>
+
+</body>
+</html>
+
+<script>
+    $(function () {
+        //allow the validation framework to re-prase the DOM
+        jQuery.validator.unobtrusive.parse();
+
+        //or to give the parser some context, supply it with a selector
+        //jQuery validator will parse all child elements (deep) starting
+        //from the selector element supplied
+        jQuery.validator.unobtrusive.parse("#dodajNoviProizvod");
+    });
+
+    
+
+    //var valSlika = $("#mdlSlika").val().split("/").pop();
+    //if (valSlika != "") { document.getElementById("lblUpload").innerHTML = valSlika; }
+
+    
+
+    //$("form").submit(function (e) {
+    //    e.preventDefault();
+    //    var prID = $("#prID").val();
+    //    if (prID == 0)
+    //    {
+    //        var valSlika = $("#mdlSlika").val();
+
+    //        if (valSlika == null || valSlika.length == 0) {
+    //            document.getElementById("spanSlika").innerHTML = "Upload slike je neophodan";
+    //        } else {
+    //            document.getElementById("spanSlika").innerHTML = "";
+    //        }
+    //    }
+    //});
+</script>

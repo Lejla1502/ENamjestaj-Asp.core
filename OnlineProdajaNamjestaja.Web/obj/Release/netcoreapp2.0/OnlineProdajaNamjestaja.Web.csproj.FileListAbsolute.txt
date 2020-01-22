@@ -1,0 +1,14 @@
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.deps.json
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.runtimeconfig.json
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.runtimeconfig.dev.json
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.dll
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.pdb
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.dll
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\bin\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Data.pdb
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.csprojResolveAssemblyReference.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.csproj.CoreCompileInputs.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.AssemblyInfoInputs.cache
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.AssemblyInfo.cs
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.csproj.CopyComplete
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.dll
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\obj\Release\netcoreapp2.0\OnlineProdajaNamjestaja.Web.pdb

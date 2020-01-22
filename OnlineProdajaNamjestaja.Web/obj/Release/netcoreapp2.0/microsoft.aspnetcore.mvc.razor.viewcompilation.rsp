@@ -1,0 +1,10 @@
+C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=OnlineProdajaNamjestaja.Web
+--content-root=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\Home\Index.cshtml
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\Shared\Error.cshtml
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\Shared\_Layout.cshtml
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\_ViewImports.cshtml
+--file=C:\Users\Lejla\source\repos\OnlineProdajaNamjestaja\OnlineProdajaNamjestaja.Web\Views\_ViewStart.cshtml
